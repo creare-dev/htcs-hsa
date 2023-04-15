@@ -7,6 +7,9 @@ devDependencies:
   '@sveltejs/adapter-auto':
     specifier: ^1.0.0-next.90
     version: 1.0.0-next.90
+  '@sveltejs/adapter-netlify':
+    specifier: ^2.0.6
+    version: 2.0.6(@sveltejs/kit@1.0.0-next.587)
   '@sveltejs/kit':
     specifier: ^1.0.0-next.587
     version: 1.0.0-next.587(svelte@3.54.0)(vite@4.0.0)
@@ -284,6 +287,10 @@ packages:
     resolution: {integrity: sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==}
     dev: true
 
+  /@iarna/toml@2.2.5:
+    resolution: {integrity: sha512-trnsAYxU3xnS1gPHPyU961coFyLkh4gAD/0zQ5mymY4yOZ+CYvsPqUbOFSw0aDM4y0tV7tiFxL/1XfXPNC6IPg==}
+    dev: true
+
   /@jridgewell/resolve-uri@3.1.0:
     resolution: {integrity: sha512-F2msla3tad+Mfht5cJq7LSXcdudKTWCVYUgw6pLFOOHSTtZlj6SWNYAp+AhuqLmWdBO2X5hPrLcu8cVP8fy28w==}
     engines: {node: '>=6.0.0'}
@@ -342,6 +349,17 @@ packages:
     resolution: {integrity: sha512-qxH46Oqqn40998wTmnbffONI0HcW/kiZ3OIjZoysjONne+LU4uEsG425MZ2RHDxmR04zxhsdjCAsn6B4du8D7w==}
     dependencies:
       import-meta-resolve: 2.2.2
+    dev: true
+
+  /@sveltejs/adapter-netlify@2.0.6(@sveltejs/kit@1.0.0-next.587):
+    resolution: {integrity: sha512-9guxI9jG/v/JTr/I1E1YGKppKWRyvs60VuhPJcGBrj2MfoBxR40vhxkrWPFcNJoAdyQUSjqxbg7sZLA4WbNfgA==}
+    peerDependencies:
+      '@sveltejs/kit': ^1.5.0
+    dependencies:
+      '@iarna/toml': 2.2.5
+      '@sveltejs/kit': 1.0.0-next.587(svelte@3.54.0)(vite@4.0.0)
+      esbuild: 0.16.17
+      set-cookie-parser: 2.6.0
     dev: true
 
   /@sveltejs/kit@1.0.0-next.587(svelte@3.54.0)(vite@4.0.0):
